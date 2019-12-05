@@ -57,12 +57,12 @@ nav-item a:hover {
   /* min-height: 100vh; */
 }
 
-#om-mig {
+#about {
 }
 
 #stuff {
 }
 
-div#om-mig > div.row {
+div#about > div.row {
   border-bottom-width: 8px !important;
 }
