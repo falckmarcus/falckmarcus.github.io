@@ -65,7 +65,7 @@
         <div class="col bg-dark">
           <img
             src="content/profilbild.jpg"
-            class="rounded-circle mx-auto d-block mt-4 mb-4"
+            class="rounded-circle mx-auto d-block mt-5 mb-5"
             style="width: 250px"
             alt=""
           />
@@ -142,8 +142,8 @@
     <!-- Innehåll -->
     <div class="container mt-4" id="projects">
       <h1 class="">Projekt</h1>
-      <div class="row">
-        <div class="col-lg-4 col-md-6 col-12">
+      <div class="row row-cols-4">
+        <div class="col-md">
           <a href="#" class="text-decoration-none">
             <div
               class="card text-center mx-auto mb-3 mt-3 rounded-0"
@@ -161,7 +161,7 @@
             </div>
           </a>
         </div>
-        <div class="col-lg-4 col-md-6 col-12">
+        <div class="col-md">
           <a href="#" class="text-decoration-none">
             <div
               class="card text-center mx-auto mb-3 mt-3 rounded-0"
@@ -179,7 +179,7 @@
             </div>
           </a>
         </div>
-        <div class="col-lg-4 col-md-6 col-12">
+        <div class="col-md">
           <a href="#" class="text-decoration-none">
             <div
               class="card text-center mx-auto mb-3 mt-3 rounded-0"
@@ -197,7 +197,7 @@
             </div>
           </a>
         </div>
-        <div class="col-lg-4 col-md-6 col-12">
+        <div class="col-md">
           <a href="#" class="text-decoration-none">
             <div
               class="card text-center mx-auto mb-3 mt-3 rounded-0"
@@ -215,7 +215,7 @@
             </div>
           </a>
         </div>
-        <div class="col-lg-4 col-md-6 col-12">
+        <div class="col-md">
           <a href="#" class="text-decoration-none">
             <div
               class="card text-center mx-auto mb-3 mt-3 rounded-0"
@@ -233,7 +233,7 @@
             </div>
           </a>
         </div>
-        <div class="col-lg-4 col-md-6 col-12">
+        <div class="col-md">
           <a href="#" class="text-decoration-none">
             <div
               class="card text-center mx-auto mb-3 mt-3 rounded-0"
@@ -256,39 +256,18 @@
 
     <div class="container" id="competence">
       <h1 class="">Kompetenser</h1>
-      <p>HTML & CSS</p>
+      <p class="mb-0"><strong>HTML & CSS</strong></p>
       <div class="progress mb-4">
         <div
           class="progress-bar"
           role="progressbar"
-          aria-valuenow="0"
+          style="width: 65%"
+          aria-valuenow="65"
           aria-valuemin="0"
           aria-valuemax="100"
         ></div>
       </div>
-      <p>HTML & CSS</p>
-      <div class="progress mb-4">
-        <div
-          class="progress-bar"
-          role="progressbar"
-          style="width: 25%"
-          aria-valuenow="25"
-          aria-valuemin="0"
-          aria-valuemax="100"
-        ></div>
-      </div>
-      <p>HTML & CSS</p>
-      <div class="progress mb-4">
-        <div
-          class="progress-bar"
-          role="progressbar"
-          style="width: 50%"
-          aria-valuenow="50"
-          aria-valuemin="0"
-          aria-valuemax="100"
-        ></div>
-      </div>
-      <p>HTML & CSS</p>
+      <p class="mb-0"><strong>Adobe inDesign</strong></p>
       <div class="progress mb-4">
         <div
           class="progress-bar"
@@ -299,13 +278,35 @@
           aria-valuemax="100"
         ></div>
       </div>
-      <p>HTML & CSS</p>
+      <p class="mb-0"><strong>Adobe illustrator</strong></p>
       <div class="progress mb-4">
         <div
           class="progress-bar"
           role="progressbar"
-          style="width: 100%"
-          aria-valuenow="100"
+          style="width: 50%"
+          aria-valuenow="50"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        ></div>
+      </div>
+      <p class="mb-0"><strong>Adobe Photoshop</strong></p>
+      <div class="progress mb-4">
+        <div
+          class="progress-bar"
+          role="progressbar"
+          style="width: 70%"
+          aria-valuenow="70"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        ></div>
+      </div>
+      <p class="mb-0"><strong>Affinity</strong></p>
+      <div class="progress mb-4">
+        <div
+          class="progress-bar"
+          role="progressbar"
+          style="width: 75%"
+          aria-valuenow="75"
           aria-valuemin="0"
           aria-valuemax="100"
         ></div>
@@ -357,14 +358,17 @@
     </div>
 
     <!-- Button trigger modal -->
-    <button
-      type="button"
-      class="btn btn-primary"
-      data-toggle="modal"
-      data-target="#formModal"
-    >
-      Click here!
-    </button>
+
+    <div class="container" id="add">
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-toggle="modal"
+        data-target="#formModal"
+      >
+        Click here!
+      </button>
+    </div>
 
     <!-- Modal -->
     <div
@@ -399,16 +403,21 @@
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-primary">
+              Save changes
+            </button>
           </div>
         </div>
       </div>
     </div>
 
-    <footer class="shadow bg-dark" id="footer">
+    <footer class=" container-fluid shadow bg-dark" id="footer">
       <span class="">
         <p class="text-muted text-center mb-0 p-4">
-          This is the footer
+          marcusfalck@fastmail.fm
+          <br />
+          Made with
+          <a href="https://getbootstrap.com/">bootstrap</a> 4.3.1
         </p>
       </span>
     </footer>
