@@ -55,6 +55,9 @@ nav-item a:hover {
 
 #home {
 }
+#projects {
+  max-width: 1420px;
+}
 
 #about {
 }
