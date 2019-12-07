@@ -55,11 +55,12 @@ nav-item a:hover {
 
 #home {
 }
-#projects {
+#about {
   max-width: 1420px;
 }
 
-#about {
+#projects {
+  max-width: 1420px;
 }
 
 #stuff {
