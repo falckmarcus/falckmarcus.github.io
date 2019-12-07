@@ -61,6 +61,8 @@ nav-item a:hover {
 
 #projects {
   max-width: 1420px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 #stuff {
