@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Amaranth");
 @import url("https://fonts.googleapis.com/css?family=Fauna+One");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
 
 /*
 [class^="col"] {
@@ -18,7 +19,7 @@
 body,
 p,
 a {
-  font-family: "Fauna One", sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 150%;
 }
 
@@ -56,7 +57,7 @@ nav-item a:hover {
 }
 
 .field-text {
-  font-size: 1.1em;
+  font-size: 1em;
   color: white;
 }
 
