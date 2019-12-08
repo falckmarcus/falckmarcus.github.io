@@ -44,30 +44,34 @@ nav-item a:hover {
   border-radius: 0;
 }
 
-.name-field {
+.field-name {
   color: lightgrey;
 }
 
-.about-text {
+.field-text {
   font-size: 1.1em;
   color: white;
 }
 
-#home {
-}
 #about {
-  max-width: 1420px;
+  max-width: 1390px;
 }
 
 #projects {
   max-width: 1420px;
 }
+
+#competence {
+  max-width: 1420px;
+}
+
+#contact {
+  max-width: 1420px;
+}
+
 #projects .col-md {
   padding-left: 0 !important;
   padding-right: 0 !important;
-}
-
-#stuff {
 }
 
 div#about > div.row {

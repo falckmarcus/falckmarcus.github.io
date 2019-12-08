@@ -16,41 +16,51 @@
     />
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <!-- Font -->
 
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/b62b677e16.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Title -->
     <title>Marcus Falck - Portfolio</title>
   </head>
 
   <!-- Top Navigation -->
   <body>
-    <nav class="navbar justify-content-center shadow p-3 mb-4 bg-white rounded">
+    <nav class="navbar shadow p-3 mb-4 bg-white rounded">
       <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link text-dark" href="#about">Om Mig</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark mr-2" href="#projects">Projekt</a>
-        </li>
-        <li class="icon">
+        <!-- 
+         <li class="icon">
           <a href="#home">
             <img src="icon.svg" style="width: 40px" alt="" />
           </a>
+        </li> 
+        -->
+        <li class="nav-item">
+          <a class="nav-link text-dark ml-2 mr-2" href="#about">Om Mig</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark ml-2" href="#competence">Kompetens</a>
+          <a class="nav-link text-dark ml-2 mr-2" href="#projects">Projekt</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="#contact">Kontakta</a>
+          <a class="nav-link text-dark ml-2 mr-2" href="#competence"
+            >Kompetens</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark ml-2 mr-2" href="#contact">Kontakt</a>
         </li>
       </ul>
     </nav>
 
-    <!-- Om Mig -->
-    <div class="container mt-4 mb-4" id="about">
-      <div class="row mt-2 border-bottom border-danger">
+    <!-- About me -->
+    <div class="container-fluid mt-4 mb-4" id="about">
+      <div class="row mt-2 border-bottom border-info">
         <div class="col-lg-8 col-12 bg-dark">
-          <h2 class="name-field text-center mt-4 mb-4">Marcus Falck</h2>
-          <p class="about-text ml-4 mr-4 mt-2 mb-2">
+          <h2 class="field-name text-center mt-4 mb-4">Marcus Falck</h2>
+          <p class="field-text ml-4 mr-4 mt-2 mb-2">
             En glad kille som är hungrig på att arbete och utvecklas inom mina
             intresseområden. Jag är social, allmänbildad, driven och alltid
             öppen för nya utmaningar. Jag tycker om teknik, grafisk design, att
@@ -73,10 +83,10 @@
       </div>
     </div>
 
-    <!-- Karusell -->
-    <!-- 
-      <div
-      class="container-fluid bg-white pl-0 pr-0 align-items-center mx-auto"
+    <!-- Carousel -->
+    <!--
+    <div
+      class="container bg-white pl-0 pr-0 align-items-center mx-auto"
       id="home"
     >
       <div class="row justify-content-center">
@@ -90,21 +100,21 @@
               <div class="carousel-item active">
                 <img
                   src="content/carousel/carousel-place1.jpg"
-                  class="d-block w-100"
+                  class="d-block w-100 img-fluid"
                   alt="..."
                 />
               </div>
               <div class="carousel-item">
                 <img
                   src="content/carousel/carousel-place2.jpg"
-                  class="d-block w-100"
+                  class="d-block w-100 img-fluid"
                   alt="..."
                 />
               </div>
               <div class="carousel-item">
                 <img
                   src="content/carousel/carousel-place3.jpg"
-                  class="d-block w-100"
+                  class="d-block w-100 img-fluid"
                   alt="..."
                 />
               </div>
@@ -136,130 +146,152 @@
           </div>
         </div>
       </div>
-    </div> 
-  -->
+    </div>
+    -->
 
-    <!-- Innehåll -->
+    <!-- Content (CARDS) -->
     <div class="container-fluid mt-4" id="projects">
-      <h1 class="">Projekt</h1>
-      <div class="row row-cols-4">
-        <div class="col-md">
-          <a href="#" class="text-decoration-none">
-            <div
-              class="card text-center mx-auto mb-3 mt-3 rounded-0"
-              style="width: 20rem;"
-            >
+      <h1 class="field-header">Projekt</h1>
+      <div class="col-md">
+        <div class="card-group">
+          <div class="row row-cols-3">
+            <div class="card mx-auto mb-3 mt-3 rounded-0" style="width: 25rem;">
               <img
                 src="content/andrej-lisakov-679177-unsplash.jpg"
                 class="card-img-top"
-                alt="cat"
+                alt=""
               />
               <div class="card-body text-secondary">
                 <h5 class="card-title">Layout</h5>
                 <p class="card-text">Some quick example text.</p>
+                <div class="card-button text-right">
+                  <button
+                    type="button"
+                    class="btn btn-dark"
+                    data-toggle="modal"
+                    data-target="#formModal1"
+                  >
+                    <i class="fas fa-search-plus"></i>
+                  </button>
+                </div>
               </div>
             </div>
-          </a>
-        </div>
-        <div class="col-md">
-          <a href="#" class="text-decoration-none">
-            <div
-              class="card text-center mx-auto mb-3 mt-3 rounded-0"
-              style="width: 20rem;"
-            >
+            <div class="card mx-auto mb-3 mt-3 rounded-0" style="width: 25rem;">
               <img
                 src="content/fancycrave-116740-unsplash.jpg"
                 class="card-img-top"
-                alt="cat"
+                alt=""
               />
               <div class="card-body text-secondary">
                 <h5 class="card-title">Varumärken</h5>
                 <p class="card-text">Some quick example text.</p>
+                <div class="card-button text-right">
+                  <button
+                    type="button"
+                    class="btn btn-dark"
+                    data-toggle="modal"
+                    data-target="#formModal1"
+                  >
+                    <i class="fas fa-search-plus"></i>
+                  </button>
+                </div>
               </div>
             </div>
-          </a>
-        </div>
-        <div class="col-md">
-          <a href="#" class="text-decoration-none">
-            <div
-              class="card text-center mx-auto mb-3 mt-3 rounded-0"
-              style="width: 20rem;"
-            >
+            <div class="card mx-auto mb-3 mt-3 rounded-0" style="width: 25rem;">
               <img
                 src="content/jeff-sheldon-3224-unsplash.jpg"
                 class="card-img-top"
-                alt="cat"
+                alt=""
               />
               <div class="card-body text-secondary">
                 <h5 class="card-title">Print</h5>
                 <p class="card-text">Some quick example text.</p>
+                <div class="card-button text-right">
+                  <button
+                    type="button"
+                    class="btn btn-dark"
+                    data-toggle="modal"
+                    data-target="#formModal1"
+                  >
+                    <i class="fas fa-search-plus"></i>
+                  </button>
+                </div>
               </div>
             </div>
-          </a>
-        </div>
-        <div class="col-md">
-          <a href="#" class="text-decoration-none">
-            <div
-              class="card text-center mx-auto mb-3 mt-3 rounded-0"
-              style="width: 20rem;"
-            >
+            <div class="card mx-auto mb-3 mt-3 rounded-0" style="width: 25rem;">
               <img
                 src="content/med-badr-chemmaoui-630239-unsplash.jpg"
                 class="card-img-top"
-                alt="cat"
+                alt=""
               />
               <div class="card-body text-secondary">
                 <h5 class="card-title">Planering</h5>
                 <p class="card-text">Some quick example text.</p>
+                <div class="card-button text-right">
+                  <button
+                    type="button"
+                    class="btn btn-dark"
+                    data-toggle="modal"
+                    data-target="#formModal1"
+                  >
+                    <i class="fas fa-search-plus"></i>
+                  </button>
+                </div>
               </div>
             </div>
-          </a>
-        </div>
-        <div class="col-md">
-          <a href="#" class="text-decoration-none">
-            <div
-              class="card text-center mx-auto mb-3 mt-3 rounded-0"
-              style="width: 20rem;"
-            >
+            <div class="card mx-auto mb-3 mt-3 rounded-0" style="width: 25rem;">
               <img
                 src="content/uriel-soberanes-324939-unsplash.jpg"
                 class="card-img-top"
-                alt="cat"
+                alt=""
               />
               <div class="card-body text-secondary">
                 <h5 class="card-title">Illustration</h5>
                 <p class="card-text">Some quick example text.</p>
+                <div class="card-button text-right">
+                  <button
+                    type="button"
+                    class="btn btn-dark"
+                    data-toggle="modal"
+                    data-target="#formModal1"
+                  >
+                    <i class="fas fa-search-plus"></i>
+                  </button>
+                </div>
               </div>
             </div>
-          </a>
-        </div>
-        <div class="col-md">
-          <a href="#" class="text-decoration-none">
-            <div
-              class="card text-center mx-auto mb-3 mt-3 rounded-0"
-              style="width: 20rem;"
-            >
+            <div class="card mx-auto mb-3 mt-3 rounded-0" style="width: 25rem;">
               <img
                 src="content/vitor-santos-62290-unsplash.jpg"
                 class="card-img-top"
-                alt="cat"
+                alt=""
               />
               <div class="card-body text-secondary">
                 <h5 class="card-title">Förpackningsdesign</h5>
                 <p class="card-text">Some quick example text.</p>
+                <div class="card-button text-right">
+                  <button
+                    type="button"
+                    class="btn btn-dark"
+                    data-toggle="modal"
+                    data-target="#formModal1"
+                  >
+                    <i class="fas fa-search-plus"></i>
+                  </button>
+                </div>
               </div>
             </div>
-          </a>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="container" id="competence">
-      <h1 class="">Kompetenser</h1>
+    <div class="container-fluid" id="competence">
+      <h1 class="field-header">Kompetenser</h1>
       <p class="mb-0"><strong>HTML & CSS</strong></p>
       <div class="progress mb-4">
         <div
-          class="progress-bar"
+          class="progress-bar bg-info"
           role="progressbar"
           style="width: 65%"
           aria-valuenow="65"
@@ -270,7 +302,7 @@
       <p class="mb-0"><strong>Adobe inDesign</strong></p>
       <div class="progress mb-4">
         <div
-          class="progress-bar"
+          class="progress-bar bg-info"
           role="progressbar"
           style="width: 75%"
           aria-valuenow="75"
@@ -281,7 +313,7 @@
       <p class="mb-0"><strong>Adobe illustrator</strong></p>
       <div class="progress mb-4">
         <div
-          class="progress-bar"
+          class="progress-bar bg-info"
           role="progressbar"
           style="width: 50%"
           aria-valuenow="50"
@@ -292,7 +324,7 @@
       <p class="mb-0"><strong>Adobe Photoshop</strong></p>
       <div class="progress mb-4">
         <div
-          class="progress-bar"
+          class="progress-bar bg-info"
           role="progressbar"
           style="width: 70%"
           aria-valuenow="70"
@@ -303,7 +335,7 @@
       <p class="mb-0"><strong>Affinity</strong></p>
       <div class="progress mb-4">
         <div
-          class="progress-bar"
+          class="progress-bar bg-info"
           role="progressbar"
           style="width: 75%"
           aria-valuenow="75"
@@ -313,9 +345,9 @@
       </div>
     </div>
 
-    <!-- Kontakt formulär -->
-    <div class="container" id="contact">
-      <h1 class="">Kontakt</h1>
+    <!-- Contact Form -->
+    <div class="container-fluid" id="contact">
+      <h1 class="field-header">Kontakt</h1>
       <div class="col-lg-8 p-4 mx-auto">
         <form>
           <div class="form-group">
@@ -357,23 +389,10 @@
       </div>
     </div>
 
-    <!-- Button trigger modal -->
-
-    <div class="container" id="add">
-      <button
-        type="button"
-        class="btn btn-primary"
-        data-toggle="modal"
-        data-target="#formModal"
-      >
-        Click here!
-      </button>
-    </div>
-
-    <!-- Modal -->
+    <!-- Modals -->
     <div
       class="modal fade"
-      id="formModal"
+      id="formModal1"
       tabindex="-1"
       role="dialog"
       aria-labelledby="formModalLabel"
@@ -402,9 +421,6 @@
               data-dismiss="modal"
             >
               Close
-            </button>
-            <button type="button" class="btn btn-primary">
-              Save changes
             </button>
           </div>
         </div>
