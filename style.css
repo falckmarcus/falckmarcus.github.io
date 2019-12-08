@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Amaranth");
-@import url("https://fonts.googleapis.com/css?family=Fauna+One");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
 
 /*
@@ -30,14 +29,14 @@ h4 {
   font-family: "Amaranth", sans-serif;
 }
 
-.nav-link {
+a.nav-link,
+a.navbar-brand {
   font-family: "Amaranth", sans-serif;
   font-size: 1.5em;
 }
 
 a.text-dark:hover,
-.nav-link:hover,
-nav-item a:hover {
+.nav-link:hover {
   color: lightgrey !important;
 }
 
