@@ -44,6 +44,13 @@ nav-item a:hover {
   border-radius: 0;
 }
 
+/*
+.field-header {
+  margin-top: 30px !important;
+  margin-bottom: 20px !important;
+} 
+*/
+
 .field-name {
   color: lightgrey;
 }
@@ -54,7 +61,7 @@ nav-item a:hover {
 }
 
 #about {
-  max-width: 1390px;
+  max-width: 1360px;
 }
 
 #projects {
