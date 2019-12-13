@@ -62,7 +62,7 @@
 
     <!-- About me -->
     <div class="container-fluid mb-4" id="about">
-      <div class="row align-items-center bg-dark border-bottom border-info">
+      <div class="row align-items-center bg-dark">
         <div class="col">
           <img
             src="content/profilbild.jpg"
@@ -81,8 +81,7 @@
             <br />
             Har utbildning i media och kommunikation: visuell kommunikation och
             design. Förutom det har jag också läst kurser i webbdesign och
-            bildberättande vid Karlstads universitet. (Ps. om någon hittar den
-            här sidan så är det bara en "work-in-progress")
+            bildberättande vid Karlstads universitet.
           </p>
         </div>
       </div>
@@ -159,9 +158,10 @@
       <div class="col-md">
         <div class="card-group">
           <div class="row row-cols-3">
+            <!-- Card åby arena -->
             <div class="card mx-auto mb-3 mt-3 rounded-0" style="width: 25rem;">
               <img
-                src="content/andrej-lisakov-679177-unsplash.jpg"
+                src="content/abyarena-rollup-slutversion-02092019-cut.jpg"
                 class="card-img-top"
                 alt=""
               />
@@ -182,6 +182,7 @@
                 </div>
               </div>
             </div>
+            <!-- Card åbytravet -->
             <div class="card mx-auto mb-3 mt-3 rounded-0" style="width: 25rem;">
               <img
                 src="content/flyer-sm-abytravet-2019.PNG"
@@ -205,9 +206,32 @@
                 </div>
               </div>
             </div>
+            <!-- Card annat -->
             <div class="card mx-auto mb-3 mt-3 rounded-0" style="width: 25rem;">
               <img
-                src="content/hole-puncher-copic-illustration-ratio-4x5.jpg"
+                src="content/1-layout-natura.PNG"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body text-secondary">
+                <h5 class="card-title">Annat</h5>
+                <p class="card-text">Okategoriserat kreativt skapande.</p>
+                <div class="card-button text-right">
+                  <button
+                    type="button"
+                    class="btn btn-dark"
+                    data-toggle="modal"
+                    data-target="#modalAnnat"
+                  >
+                    <i class="fas fa-search-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Card illustrationer -->
+            <div class="card mx-auto mb-3 mt-3 rounded-0" style="width: 25rem;">
+              <img
+                src="content/hole-puncher-copic-illustration-ratio-5x7.jpg"
                 class="card-img-top"
                 alt=""
               />
@@ -229,6 +253,7 @@
                 </div>
               </div>
             </div>
+            <!-- Card krama -->
             <div class="card mx-auto mb-3 mt-3 rounded-0" style="width: 25rem;">
               <img
                 src="content/med-badr-chemmaoui-630239-unsplash.jpg"
@@ -246,13 +271,14 @@
                     type="button"
                     class="btn btn-dark"
                     data-toggle="modal"
-                    data-target="#formModal1"
+                    data-target="#modalKrama"
                   >
                     <i class="fas fa-search-plus"></i>
                   </button>
                 </div>
               </div>
             </div>
+            <!-- Card webbdesign -->
             <div class="card mx-auto mb-3 mt-3 rounded-0" style="width: 25rem;">
               <img
                 src="content/kaijsers-re-design.png"
@@ -267,28 +293,7 @@
                     type="button"
                     class="btn btn-dark"
                     data-toggle="modal"
-                    data-target="#formModal5"
-                  >
-                    <i class="fas fa-search-plus"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="card mx-auto mb-3 mt-3 rounded-0" style="width: 25rem;">
-              <img
-                src="content/1-layout-natura.PNG"
-                class="card-img-top"
-                alt=""
-              />
-              <div class="card-body text-secondary">
-                <h5 class="card-title">Annat</h5>
-                <p class="card-text">Okategoriserat kreativt skapande.</p>
-                <div class="card-button text-right">
-                  <button
-                    type="button"
-                    class="btn btn-dark"
-                    data-toggle="modal"
-                    data-target="#formModal6"
+                    data-target="#modalWebbdesign"
                   >
                     <i class="fas fa-search-plus"></i>
                   </button>
@@ -415,7 +420,7 @@
       </div>
     </div>
 
-    <!-- Modal #1 -->
+    <!-- Modal åby Arena -->
     <div
       class="modal fade"
       id="formModal1"
@@ -441,15 +446,19 @@
             <div class="container">
               <div class="row">
                 <div class="col">
+                  <p></p>
                   <img
-                    src="content/andrej-lisakov-679177-unsplash.jpg"
+                    src="content/abyarena-rollup-slutversion-02092019-50-scale.jpg"
                     class="card-img-top"
                     alt=""
                   />
                 </div>
+              </div>
+              <div class="row">
                 <div class="col">
+                  <p></p>
                   <img
-                    src="content/andrej-lisakov-679177-unsplash.jpg"
+                    src="content/20191007-tavling-abyarena_01-page1.jpg"
                     class="card-img-top"
                     alt=""
                   />
@@ -457,20 +466,16 @@
               </div>
             </div>
           </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Close
-            </button>
-          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Close
+          </button>
         </div>
       </div>
     </div>
 
-    <!-- Modal #2 -->
+    <!-- Modal åbytravet -->
     <div
       class="modal fade"
       id="formModal2"
@@ -497,30 +502,7 @@
               <div class="row">
                 <div class="col">
                   <img
-                    src="content/andrej-lisakov-679177-unsplash.jpg"
-                    class="card-img-top"
-                    alt=""
-                  />
-                </div>
-                <div class="col">
-                  <img
-                    src="content/andrej-lisakov-679177-unsplash.jpg"
-                    class="card-img-top"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <img
-                    src="content/andrej-lisakov-679177-unsplash.jpg"
-                    class="card-img-top"
-                    alt=""
-                  />
-                </div>
-                <div class="col">
-                  <img
-                    src="content/andrej-lisakov-679177-unsplash.jpg"
+                    src="content/flyer-sm-abytravet-2019.PNG"
                     class="card-img-top"
                     alt=""
                   />
@@ -541,7 +523,74 @@
       </div>
     </div>
 
-    <!-- Modal #3 -->
+    <!-- Modal annat -->
+    <div
+      class="modal fade"
+      id="modalAnnat"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="formModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="formModalLabel">Annat</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <p></p>
+                  <img
+                    src="content/1-layout-natura-border.PNG"
+                    class="card-img-top"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <img
+                    src="content/2-3-layout-natura.PNG"
+                    class="card-img-top"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <img
+                    src="content/4-5-layout-natura.PNG"
+                    class="card-img-top"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal illustrationer -->
     <div
       class="modal fade"
       id="formModal3"
@@ -606,10 +655,57 @@
       </div>
     </div>
 
-    <!-- Modal #5 -->
+    <!-- Modal krama -->
     <div
       class="modal fade"
-      id="formModal5"
+      id="modalKrama"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="formModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="formModalLabel">KRAMA</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <p>
+                    Ingenting
+                  </p>
+                  <img src="content/??" class="card-img-top" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal webbdesign -->
+    <div
+      class="modal fade"
+      id="modalWebbdesign"
       tabindex="-1"
       role="dialog"
       aria-labelledby="formModalLabel"
@@ -660,77 +756,10 @@
       </div>
     </div>
 
-    <!-- Modal #6 -->
-    <div
-      class="modal fade"
-      id="formModal6"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="formModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="formModalLabel">Annat</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="container">
-              <div class="row">
-                <div class="col">
-                  <p></p>
-                  <img
-                    src="content/1-layout-natura-border.PNG"
-                    class="card-img-top"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <img
-                    src="content/2-3-layout-natura.PNG"
-                    class="card-img-top"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <img
-                    src="content/4-5-layout-natura.PNG"
-                    class="card-img-top"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <footer class="container-fluid shadow bg-dark mt-5" id="footer">
       <span class="">
         <p class="text-muted text-center mb-0 p-4">
-          Made with
+          Webbsidan är gjord med
           <a href="https://getbootstrap.com/">bootstrap</a> 4.3.1
         </p>
       </span>
