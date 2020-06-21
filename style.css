@@ -12,7 +12,6 @@
 [class^="btn"] {
   margin: 0.5em;
 }
-.col {}
 */
 
 body,
@@ -32,7 +31,7 @@ h4 {
 a.nav-link,
 a.navbar-brand {
   font-family: "Roboto Mono", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 a.text-dark:hover,
