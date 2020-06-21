@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Amaranth");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;500&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
 
 /*
@@ -26,12 +26,12 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Amaranth", sans-serif;
+  font-family: "Roboto Mono", sans-serif;
 }
 
 a.nav-link,
 a.navbar-brand {
-  font-family: "Amaranth", sans-serif;
+  font-family: "Roboto Mono", sans-serif;
   font-size: 1.5em;
 }
 
