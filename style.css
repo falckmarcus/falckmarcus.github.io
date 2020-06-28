@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
 
 /*
@@ -25,17 +25,21 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Roboto Mono", sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 700;
 }
 
 a.nav-link,
 a.navbar-brand {
-  font-family: "Roboto Mono", sans-serif;
-  font-size: 1.2em;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
 }
 
 a.text-dark:hover,
-.nav-link:hover {
+.nav-link:hover, 
+a.text-dark:active,
+.nav-link:active {
   color: rgb(196, 89, 89) !important;
 }
 
