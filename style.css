@@ -36,7 +36,7 @@ a.navbar-brand {
 
 a.text-dark:hover,
 .nav-link:hover {
-  color: lightgrey !important;
+  color: rgb(196, 89, 89) !important;
 }
 
 .card-img-top.cardImg {
