@@ -1,24 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700&display=swap');
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 body,
 p,
 a {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Quicksand", sans-serif;
   line-height: 150%;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: 'Noto Sans TC', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 700;
 }
 
 a.nav-link,
 a.navbar-brand {
-  font-family: 'Noto Sans TC', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 1.1rem;
   font-weight: 700;
 }
@@ -40,7 +41,6 @@ a.text-dark:active,
 }
 
 .field-text {
-  font-size: 1em;
   color: white;
 }
 
