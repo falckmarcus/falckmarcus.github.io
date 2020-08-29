@@ -20,8 +20,17 @@ h4 {
 a.nav-link,
 a.navbar-brand {
   font-family: 'Quicksand', sans-serif;
-  font-size: 1.1rem;
-  font-weight: 700;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+#nav-container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.navbar-toggler {
+  border-color: transparent !important;
 }
 
 a.text-dark:hover,
@@ -36,10 +45,6 @@ a.text-dark:active,
   max-height: 34.8rem;
 }
 
-.field-name {
-  color: lightgrey;
-}
-
 .field-text {
   color: white;
 }
@@ -48,7 +53,7 @@ a.text-dark:active,
   max-width: 1350px;
 }
 
-#projects {
+#projects, #contact {
   max-width: 1420px;
 }
 
@@ -56,24 +61,29 @@ a.text-dark:active,
   max-width: 1410px;
 }
 
-#contact {
-  max-width: 1420px;
-}
-
 #projects .col-md {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
 
-/* 
-div#about > div.row {
-  border-bottom-width: 8px !important;
-}
-*/
-
-/*
 .competence-infoField {
   border-left: 5px solid;
   border-left-color: #17a2b8 !important;
+  border-radius: 0;
 }
-*/
+
+.btn-Copy {
+box-sizing: border-box !important;
+border-radius: 0 !important;
+border: 1px solid rgba(0, 0, 0, 0.2) !important;
+background-color: rgba(255, 255, 255, 0.9) !important;
+color: rgba(0, 0, 0, 0.8) !important;
+padding: 0.75em 1rem !important;
+font-size: 18px !important;
+line-height: 115% !important;
+}
+
+.btn-Copy:hover {
+  color: inherit;
+}
+

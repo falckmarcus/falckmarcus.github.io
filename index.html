@@ -6,49 +6,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/form-reset.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
   <script src="https://kit.fontawesome.com/b62b677e16.js" crossorigin="anonymous"></script>
 
-  <title>Marcus Falck - Portfolio</title>
+  <title>Portfolio @ Marcus Falck</title>
 
 </head>
 
-
 <body>
 
-  <!-- Top Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow">
-    <a class="navbar-brand ml-4" href="#"><i class="fas fa-coffee"></i></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#global-navbar"
-      aria-controls="global-navbar" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span></button>
-    <div class="collapse navbar-collapse" id="global-navbar">
-      <ul class="navbar-nav">
-        <!--<li class="nav-item">
-          <a class="nav-link text-dark ml-4" href="#about">Om Mig</a>
-        </li> -->
-        <li class="nav-item">
-          <a class="nav-link text-dark ml-4" href="#projects">Projekt</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark ml-4" href="#competence">Kompetenser</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark ml-4" href="#contact">Kontakta mig</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <div id="nav-container">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <a class="navbar-brand ml-2" href="#">_marcus falck</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#global-navbar"
+        aria-controls="global-navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse justify-content-end" id="global-navbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-dark ml-4" href="#projects">Projekt</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark ml-4" href="#competence">Kompetenser</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark ml-4" href="#contact">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
   <!-- About me -->
-  <div class="container-fluid mt-4 mb-4 pt-4 pb-4" id="about">
+  <div class="container-fluid mt-4 pt-4 pb-4" id="about">
     <div class="row align-items-center bg-dark pt-4 pb-4">
       <div class="col">
-        <img src="content/profilbild.jpg" class="rounded-circle mx-auto d-block mt-4 mb-4" style="width: 250px"
+        <img src="content/profilbild.jpg" class="rounded-circle mx-auto d-block mt-4 mb-4" style="width: 235px"
           alt="" />
       </div>
       <div class="col-lg-8">
-        <h2 class="field-name text-center mt-2 mb-3">Marcus Falck</h2>
         <p class="field-text ml-4 mr-4 mt-2 mb-4">
           En glad kille som är hungrig på att arbete och utvecklas inom mina
           intresseområden. Jag är social, allmänbildad, driven och alltid
@@ -56,7 +54,7 @@
           vara aktiv och lära mig nya saker. <br />
           <br />
           Jag har tagit examen i media och kommunikation: visuell kommunikation och
-          design vid Karlstads universitet. Förutom det har jag också läst bildberättande samt 
+          design vid Karlstads universitet. Förutom det har jag också läst bildberättande samt
           praktiserat som grafisk formgivare på Åbytravet utanför Göteborg.
         </p>
       </div>
@@ -64,50 +62,43 @@
   </div>
 
   <!-- Content (CARDS) -->
-  <div class="container-fluid mt-4 mb-4 pt-4 pb-4" id="projects">
+  <div class="container-fluid mt-4 pt-4 pb-4" id="projects">
     <div class="col-md">
       <div class="card-group">
         <div class="row row-cols-3">
 
-          <!-- Card åby arena -->
-          <div class="card mx-auto bg-white mb-3 mt-3 rounded-0" style="width: 25rem;">
+          <!-- Card #1 -->
+          <div class="card mx-auto bg-white m-4 rounded-0" style="width: 25rem;">
             <img src="content/abyarena-rollup-slutversion-02092019-cut.jpg" class="card-img-top cardImg" alt="" />
             <div class="card-body text-secondary">
               <h5 class="card-title">Åby Arena</h5>
-              <p class="card-text">
-                Roll-up samt flyer för Åby Arena utifrån deras
-                grafiska profil.</p>
               <div class="card-button text-right">
-                <button type="button" class="btn btn-dark stretched-link" data-toggle="modal" data-target="#formModal1">
+                <button type="button" class="btn btn-outline-light stretched-link" data-toggle="modal" data-target="#formModal1">
                   <i class="fas fa-search-plus"></i></button>
               </div>
             </div>
           </div>
 
-          <!-- Card åbytravet -->
-          <div class="card mx-auto bg-white mb-3 mt-3 rounded-0" style="width: 25rem;">
+          <!-- Card #2 -->
+          <div class="card mx-auto bg-white m-4 rounded-0" style="width: 25rem;">
             <img src="content/flyer-sm-abytravet-2019.PNG" class="card-img-top cardImg" alt="" />
             <div class="card-body text-secondary">
               <h5 class="card-title">Åbytravet</h5>
-              <p class="card-text">
-                Säljblad inför Trav-SM 2019 på Åbytravet.
-              </p>
               <div class="card-button text-right">
-                <button type="button" class="btn btn-dark stretched-link" data-toggle="modal" data-target="#formModal2">
+                <button type="button" class="btn btn-outline-light stretched-link" data-toggle="modal" data-target="#formModal2">
                   <i class="fas fa-search-plus"></i>
                 </button>
               </div>
             </div>
           </div>
 
-          <!-- Card layout -->
-          <div class="card mx-auto bg-white mb-3 mt-3 rounded-0" style="width: 25rem;">
+          <!-- Card #3 -->
+          <div class="card mx-auto bg-white m-4 rounded-0" style="width: 25rem;">
             <img src="content/1-layout-natura.PNG" class="card-img-top cardImg" alt="" />
             <div class="card-body text-secondary">
-              <h5 class="card-title">Magasinlayout</h5>
-              <p class="card-text">En layoutuppgift från min universitetsutbildning.</p>
+              <h5 class="card-title">Magasinlayout: Natura</h5>
               <div class="card-button text-right">
-                <button type="button" class="btn btn-dark stretched-link" data-toggle="modal"
+                <button type="button" class="btn btn-outline-light stretched-link" data-toggle="modal"
                   data-target="#modalLayout">
                   <i class="fas fa-search-plus"></i>
                 </button>
@@ -115,31 +106,26 @@
             </div>
           </div>
 
-          <!-- Card illustrationer -->
-          <div class="card mx-auto bg-white mb-3 mt-3 rounded-0" style="width: 25rem;">
+          <!-- Card #4 -->
+          <div class="card mx-auto bg-white m-4 rounded-0" style="width: 25rem;">
             <img src="content/hole-puncher-copic-illustration-ratio-5x7.jpg" class="card-img-top cardImg" alt="" />
             <div class="card-body text-secondary">
               <h5 class="card-title">Illustrationer</h5>
-              <p class="card-text">
-                Blandade illustrationer producerade i Adobe illustrator,
-                photoshop eller på papper.
-              </p>
               <div class="card-button text-right">
-                <button type="button" class="btn btn-dark stretched-link" data-toggle="modal" data-target="#formModal3">
+                <button type="button" class="btn btn-outline-light stretched-link" data-toggle="modal" data-target="#formModal3">
                   <i class="fas fa-search-plus"></i>
                 </button>
               </div>
             </div>
           </div>
 
-          <!-- Card webbdesign -->
-          <div class="card mx-auto bg-white mb-3 mt-3 rounded-0" style="width: 25rem;">
+          <!-- Card #5 -->
+          <div class="card mx-auto bg-white m-4 rounded-0" style="width: 25rem;">
             <img src="content/kaijsers-re-design.png" class="card-img-top cardImg" alt="" />
             <div class="card-body text-secondary">
-              <h5 class="card-title">Webbdesign</h5>
-              <p class="card-text">Re-design av restaurangen Kaijsers köksmingels webbsida.</p>
+              <h5 class="card-title">Webbdesign: Kaijsers</h5>
               <div class="card-button text-right">
-                <button type="button" class="btn btn-dark stretched-link" data-toggle="modal"
+                <button type="button" class="btn btn-outline-light stretched-link" data-toggle="modal"
                   data-target="#modalWebbdesign">
                   <i class="fas fa-search-plus"></i>
                 </button>
@@ -147,17 +133,13 @@
             </div>
           </div>
 
-          <!-- Card innehåll kommer... -->
-          <div class="card mx-auto bg-white mb-3 mt-3 rounded-0" style="width: 25rem;">
+          <!-- Card #6 -->
+          <div class="card mx-auto bg-white m-4 rounded-0" style="width: 25rem;">
             <img src="content/mikhail-vasilyev-NodtnCsLdTE-unsplash.jpg" class="card-img-top cardImg" alt="" />
             <div class="card-body text-secondary">
               <h5 class="card-title">TBA</h5>
-              <p class="card-text">
-                Mer innehåll kommer inom kort...
-                </br> 
-              </p>
               <div class="card-button text-right">
-                <button type="button" class="btn btn-dark stretched-link" data-toggle="modal" data-target="#modalTBA">
+                <button type="button" class="btn btn-outline-light stretched-link" data-toggle="modal" data-target="#modalTBA">
                   <i class="fas fa-search-plus"></i>
                 </button>
               </div>
@@ -171,13 +153,13 @@
   <div class="container-fluid mt-4 mb-4 pt-4 pb-4" id="competence">
     <div class="row mx-auto">
       <div class="col">
-        <div class="card bg-light h-100">
-          <div class="card-body competence-infoField">
+        <div class="card .bg-light h-100 competence-infoField">
+          <div class="card-body">
             <h4 class="card-title">Kompetenser</h4>
             <p class="card-text">
-              Jag har stor erfarenhet av Adobe photoshop,
-              illustrator och inDesign och har använt mig
-              av dessa program på fritiden, i utbildning och praktik.
+              Jag har stor erfarenhet av Adobe Photoshop,
+              Illustrator och InDesign och har använt mig flitigt
+              av dessa program genom utbildning, praktik samt på fritiden.
               </br>
               </br>
               Utöver detta har jag erfarenhet av HTML & CSS,
@@ -186,20 +168,20 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-8 font-weight-bold mt-2 mb-2">
+      <div class="col-12 col-lg-8 mt-3 mb-4">
         <p class="mb-0">HTML & CSS</p>
         <div class="progress mb-3">
-          <div class="progress-bar bg-dark" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0"
-            aria-valuemax="100"></div>
-        </div>
-        <p class="mb-0">Adobe inDesign</p>
-        <div class="progress mb-3">
-          <div class="progress-bar bg-dark" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
-            aria-valuemax="100"></div>
-        </div>
-        <p class="mb-0">Adobe illustrator</p>
-        <div class="progress mb-3">
           <div class="progress-bar bg-dark" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+            aria-valuemax="100"></div>
+        </div>
+        <p class="mb-0">Adobe InDesign</p>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-dark" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+            aria-valuemax="100"></div>
+        </div>
+        <p class="mb-0">Adobe Illustrator</p>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-dark" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0"
             aria-valuemax="100"></div>
         </div>
         <p class="mb-0">Adobe Photoshop</p>
@@ -217,40 +199,43 @@
   </div>
 
   <!-- Contact form -->
+
   <div class="container-fluid mt-4 mb-4 pt-4 pb-4" id="contact">
     <div class="col-lg-8 mx-auto">
       <p class="text-center">
-        <button class="btn btn-primary mb-4" type="button" data-toggle="collapse" data-target="#collapse-target"
+        <button class="btn btn-outline-dark mb-4 btn-Copy" type="button" data-toggle="collapse" data-target="#collapse-target"
           aria-expanded="false" aria-controls="collapse-target">
           Kontakta mig
         </button>
       </p>
 
       <div class="collapse" id="collapse-target">
-        <form>
-          <div class="form-group">
-            <label for="FormControlInput1">Namn</label>
-            <input type="name" class="form-control" id="FormControlInput1" placeholder="Namn" />
-          </div>
-          <div class="form-group">
-            <label for="FormControlInput2">Mailadress</label>
-            <input type="email" class="form-control" id="FormControlInput2" placeholder="namn@example.com" />
-          </div>
-          <div class="form-group">
-            <label for="FormControlTextarea1">Meddelande</label>
-            <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Skicka</button>
-          <p class="mt-4 mb-2 text-danger">
-            Kontaktformuläret fungerar ej för tillfället. Kontakta mig
-            istället på marcusfalck@fastmail.fm eller 072 399 66 28
-          </p>
+
+
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8"
+          action="https://formspree.io/mnqgkdey" method="post">
+          <fieldset id="fs-frm-inputs">
+            <label for="full-name">Namn</label>
+            <input type="text" name="name" id="full-name" placeholder="För- och efternamn" required="">
+            <label for="email-address">E-mailadress</label>
+            <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+            <label for="message">Meddelande</label>
+            <textarea rows="5" name="message" id="message"
+              placeholder="Skriv ditt meddelande här..."
+              required=""></textarea>
+            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+          </fieldset>
+          <input type="submit" value="Skicka">
         </form>
+
       </div>
     </div>
   </div>
 
-  <!-- Modal åby arena -->
+
+
+
+  <!-- Modal aby arena -->
   <div class="modal fade" id="formModal1" tabindex="-1" role="dialog" aria-labelledby="formModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
@@ -263,26 +248,28 @@
         </div>
         <div class="modal-body">
           <div class="container">
-            <div class="row">
+            <div class="row mb-3">
               <div class="col">
-                <img src="content/abyarena-rollup-slutversion-02092019-50-scale.jpg" class="card-img-top" alt="Helbild på Åby arenas rollup" />
+                <img src="content/abyarena-rollup-slutversion-02092019-50-scale.jpg" class="card-img-top"
+                  alt="Helbild på Åby arenas rollup" />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col">
+                <img src="content/Mockup-Rollup_Åby-Arena.jpg" class="card-img-top"
+                  alt="Mockup för Åby arenas rollup" />
               </div>
             </div>
             <div class="row">
               <div class="col">
-                <img src="content/Mockup-Rollup_Åby-Arena.jpg" class="card-img-top" alt="Mockup för Åby arenas rollup" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <p></p>
-                <img src="content/tavling-abyarena_01-page1.jpg" class="card-img-top" alt="Helbild på flyer för Åby arena" />
+                <img src="content/tavling-abyarena_01-page1.jpg" class="card-img-top"
+                  alt="Helbild på flyer för Åby arena" />
               </div>
             </div>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          <button type="button" class="btn btn-secondary btn-Copy" data-dismiss="modal">
             Close
           </button>
         </div>
@@ -290,7 +277,7 @@
     </div>
   </div>
 
-  <!-- Modal åbytravet -->
+  <!-- Modal abytravet -->
   <div class="modal fade" id="formModal2" tabindex="-1" role="dialog" aria-labelledby="formModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
@@ -305,13 +292,15 @@
           <div class="container">
             <div class="row">
               <div class="col">
+                <p class="mb-3">Säljblad inför trav-SM 2019 på Åbytravet. Designen är utförd med hänsyn till Åbytravets
+                  grafiska profil och i samråd med dåvarande marknadsansvarig.</p>
                 <img src="content/flyer-sm-abytravet-2019.PNG" class="card-img-top" alt="" />
               </div>
             </div>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          <button type="button" class="btn btn-secondary btn-Copy" data-dismiss="modal">
             Close
           </button>
         </div>
@@ -319,7 +308,7 @@
     </div>
   </div>
 
-  <!-- Modal layout -->
+  <!-- Modal LYT -->
   <div class="modal fade" id="modalLayout" tabindex="-1" role="dialog" aria-labelledby="formModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
@@ -332,13 +321,15 @@
         </div>
         <div class="modal-body">
           <div class="container">
-            <div class="row">
+            <div class="row mb-3">
               <div class="col">
-                <p></p>
+                <p class="mb-3">I detta projekt arbetades en layout fram till det fiktiva magasinet Natura. Magasinet
+                  har ett
+                  naturlivsfokus och i designen låg ett stort fokus vid rytm och och harmoni i innehållet. </p>
                 <img src="content/1-layout-natura-border.PNG" class="card-img-top" alt="" />
               </div>
             </div>
-            <div class="row">
+            <div class="row mb-3">
               <div class="col">
                 <img src="content/2-3-layout-natura.PNG" class="card-img-top" alt="" />
               </div>
@@ -351,7 +342,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          <button type="button" class="btn btn-secondary btn-Copy" data-dismiss="modal">
             Close
           </button>
         </div>
@@ -372,12 +363,12 @@
         </div>
         <div class="modal-body">
           <div class="container">
-            <div class="row">
+            <div class="row mb-3">
               <div class="col">
                 <img src="content/DOC181031-20181031153011-5.jpg" class="card-img-top" alt="" />
               </div>
             </div>
-            <div class="row">
+            <div class="row mb-3">
               <div class="col">
                 <img src="content/popcicle-square.png" class="card-img-top" alt="" />
               </div>
@@ -385,7 +376,7 @@
                 <img src="content/minimal-illustration-pill.png" class="card-img-top" alt="" />
               </div>
             </div>
-            <div class="row">
+            <div class="row mb-3">
               <div class="col">
                 <img src="content/minimal-illustration-computer.png" class="card-img-top" alt="" />
               </div>
@@ -398,7 +389,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          <button type="button" class="btn btn-secondary btn-Copy" data-dismiss="modal">
             Close
           </button>
         </div>
@@ -423,7 +414,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          <button type="button" class="btn btn-secondary btn-Copy" data-dismiss="modal">
             Close
           </button>
         </div>
@@ -446,10 +437,10 @@
           <div class="container">
             <div class="row">
               <div class="col">
-                <p>
-                  Ett mindre universitetsprojekt där jag gjorde en re-design
+                <p class="mb-3">
+                  Ett mindre universitetsprojekt där jag skapade en re-design
                   av en då fortfarande existerande restaurang hemsida. För att
-                  se webbsidan
+                  komma till hemsidan
                   <a href="https://papperskyckling.github.io/">klicka här!</a>
                 </p>
                 <img src="content/kaijsers-re-design.png" class="card-img-top" alt="" />
@@ -458,7 +449,7 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          <button type="button" class="btn btn-secondary btn-Copy" data-dismiss="modal">
             Close
           </button>
         </div>
@@ -480,14 +471,14 @@
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
 
   <!-- JQuery script -->
   <script>
