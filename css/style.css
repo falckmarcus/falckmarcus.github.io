@@ -35,10 +35,11 @@ a.navbar-brand {
 
 a.text-dark:hover,
 .nav-link:hover, 
-a.text-dark:active,
-.nav-link:active {
+a.text-dark:focus,
+.nav-link:focus {
   color: rgb(196, 89, 89) !important;
 }
+
 
 .card-img-top.cardImg {
   border-radius: 0;
@@ -53,9 +54,10 @@ a.text-dark:active,
   max-width: 1350px;
 }
 
+
 #projects, #contact {
   max-width: 1420px;
-}
+} 
 
 #competence {
   max-width: 1410px;
